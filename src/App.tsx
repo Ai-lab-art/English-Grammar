@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import TableOfContents from "./pages/TableOfContents";
 import NotFound from "./pages/NotFound";
 import Articles from "./pages/grammar/Articles";
 import Prepositions from "./pages/grammar/Prepositions";
@@ -28,6 +29,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/topics" element={<TableOfContents />} />
           <Route path="/grammar/articles" element={<Articles />} />
           <Route path="/grammar/prepositions" element={<Prepositions />} />
           <Route path="/grammar/tag-questions" element={<TagQuestions />} />
