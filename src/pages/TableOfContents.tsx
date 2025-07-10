@@ -56,8 +56,8 @@ const TableOfContents = () => {
             <Card className="bg-gradient-to-br from-blue-50 to-indigo-100 border-blue-200">
               <CardHeader className="text-center">
                 <Globe className="h-12 w-12 text-blue-600 mx-auto mb-2" />
-                <CardTitle className="text-blue-800">Bilingual Support</CardTitle>
-                <CardDescription>English and Nepali explanations for better understanding</CardDescription>
+                <CardTitle className="text-blue-800">Clear Examples</CardTitle>
+                <CardDescription>Real-world examples with detailed explanations</CardDescription>
               </CardHeader>
             </Card>
             <Card className="bg-gradient-to-br from-green-50 to-emerald-100 border-green-200">

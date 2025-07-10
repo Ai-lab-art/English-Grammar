@@ -26,7 +26,7 @@ const Index = () => {
         <div className="pt-12">
           <Button asChild size="lg" className="text-2xl px-16 py-8 h-auto rounded-full bg-gradient-to-r from-primary to-blue-600 hover:from-blue-600 hover:to-primary transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
             <Link to="/topics">
-              Start Learning
+              Start
             </Link>
           </Button>
         </div>
