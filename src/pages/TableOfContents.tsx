@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Users, GraduationCap, ArrowLeft } from "lucide-react";
+import { BookOpen, ArrowLeft, CheckCircle, Globe, BookOpenCheck, Lightbulb } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const grammarTopics = [
@@ -49,29 +49,39 @@ const TableOfContents = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8">
-        {/* Stats Cards */}
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
-          <Card>
-            <CardHeader className="text-center">
-              <BookOpen className="h-12 w-12 text-primary mx-auto mb-2" />
-              <CardTitle>12+ Topics</CardTitle>
-              <CardDescription>Comprehensive grammar coverage</CardDescription>
-            </CardHeader>
-          </Card>
-          <Card>
-            <CardHeader className="text-center">
-              <Users className="h-12 w-12 text-primary mx-auto mb-2" />
-              <CardTitle>Secondary Level</CardTitle>
-              <CardDescription>Designed for young learners</CardDescription>
-            </CardHeader>
-          </Card>
-          <Card>
-            <CardHeader className="text-center">
-              <GraduationCap className="h-12 w-12 text-primary mx-auto mb-2" />
-              <CardTitle>Rich Examples</CardTitle>
-              <CardDescription>Practical learning with examples</CardDescription>
-            </CardHeader>
-          </Card>
+        {/* Salient Features */}
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold text-center mb-6 text-primary">Salient Features</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="bg-gradient-to-br from-blue-50 to-indigo-100 border-blue-200">
+              <CardHeader className="text-center">
+                <Globe className="h-12 w-12 text-blue-600 mx-auto mb-2" />
+                <CardTitle className="text-blue-800">Bilingual Support</CardTitle>
+                <CardDescription>English and Nepali explanations for better understanding</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="bg-gradient-to-br from-green-50 to-emerald-100 border-green-200">
+              <CardHeader className="text-center">
+                <CheckCircle className="h-12 w-12 text-green-600 mx-auto mb-2" />
+                <CardTitle className="text-green-800">Simple Explanations</CardTitle>
+                <CardDescription>Easy-to-understand examples with detailed explanations</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="bg-gradient-to-br from-purple-50 to-violet-100 border-purple-200">
+              <CardHeader className="text-center">
+                <BookOpenCheck className="h-12 w-12 text-purple-600 mx-auto mb-2" />
+                <CardTitle className="text-purple-800">Comprehensive Coverage</CardTitle>
+                <CardDescription>12+ essential grammar topics for complete learning</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="bg-gradient-to-br from-orange-50 to-amber-100 border-orange-200">
+              <CardHeader className="text-center">
+                <Lightbulb className="h-12 w-12 text-orange-600 mx-auto mb-2" />
+                <CardTitle className="text-orange-800">Interactive Design</CardTitle>
+                <CardDescription>Colorful, engaging interface with practice exercises</CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
         </div>
 
         {/* Table of Contents */}
