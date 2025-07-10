@@ -16,7 +16,7 @@ const GrammarLayout = ({ title, description, children }: GrammarLayoutProps) => 
       <div className="bg-white shadow-sm border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center gap-4">
-            <Button asChild variant="ghost" size="sm">
+            <Button asChild variant="ghost" size="sm" className="animate-blink-bright text-white font-bold border-2 border-white hover:scale-105 transition-transform">
               <Link to="/">
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 Back to Topics
