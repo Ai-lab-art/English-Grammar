@@ -18,6 +18,12 @@ import Auxiliaries from "./pages/grammar/Auxiliaries";
 import WordClasses from "./pages/grammar/WordClasses";
 import Tenses from "./pages/grammar/Tenses";
 import Modals from "./pages/grammar/Modals";
+import CausativeVerbs from "./pages/grammar/CausativeVerbs";
+import SubjectVerbAgreement from "./pages/grammar/SubjectVerbAgreement";
+import Connectives from "./pages/grammar/Connectives";
+import RelativeClauses from "./pages/grammar/RelativeClauses";
+import DeterminersQuantifiers from "./pages/grammar/DeterminersQuantifiers";
+import GerundInfinitive from "./pages/grammar/GerundInfinitive";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +48,12 @@ const App = () => (
           <Route path="/grammar/word-classes" element={<WordClasses />} />
           <Route path="/grammar/tenses" element={<Tenses />} />
           <Route path="/grammar/modals" element={<Modals />} />
+          <Route path="/grammar/causative-verbs" element={<CausativeVerbs />} />
+          <Route path="/grammar/subject-verb-agreement" element={<SubjectVerbAgreement />} />
+          <Route path="/grammar/connectives" element={<Connectives />} />
+          <Route path="/grammar/relative-clauses" element={<RelativeClauses />} />
+          <Route path="/grammar/determiners-quantifiers" element={<DeterminersQuantifiers />} />
+          <Route path="/grammar/gerund-infinitive" element={<GerundInfinitive />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
