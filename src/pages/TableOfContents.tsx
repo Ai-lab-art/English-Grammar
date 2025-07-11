@@ -15,7 +15,13 @@ const grammarTopics = [
   { id: "auxiliaries", title: "Auxiliary Verbs", description: "Helping verbs and their usage" },
   { id: "word-classes", title: "Word Classes", description: "Parts of speech and their functions" },
   { id: "tenses", title: "Tenses", description: "Present, past, and future tenses" },
-  { id: "modals", title: "Modal Verbs", description: "Can, could, should, must, and other modals" }
+  { id: "modals", title: "Modal Verbs", description: "Can, could, should, must, and other modals" },
+  { id: "causative-verbs", title: "Causative Verbs", description: "Have, get, make, let and their usage" },
+  { id: "subject-verb-agreement", title: "Subject-Verb Agreement", description: "Rules for matching subjects and verbs" },
+  { id: "connectives", title: "Connectives", description: "Linking words and phrases in sentences" },
+  { id: "relative-clauses", title: "Relative Clauses", description: "Who, which, that, where clauses" },
+  { id: "determiners-quantifiers", title: "Determiners & Quantifiers", description: "Some, any, many, much, few, little" },
+  { id: "gerund-infinitive", title: "Gerund & Infinitive", description: "When to use -ing forms and to + verb" }
 ];
 
 const TableOfContents = () => {
@@ -25,7 +31,7 @@ const TableOfContents = () => {
       <div className="bg-white shadow-sm border-b">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center gap-4 mb-4">
-            <Button asChild variant="ghost" size="sm" className="animate-blink-bright text-white font-bold border-2 border-white hover:scale-105 transition-transform">
+            <Button asChild size="sm" className="bg-blue-600 text-white hover:bg-blue-700 hover:scale-105 transition-transform">
               <Link to="/">
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 Back to Home
@@ -49,40 +55,6 @@ const TableOfContents = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8">
-        {/* Salient Features */}
-        <div className="mb-8">
-          <h2 className="text-2xl font-bold text-center mb-6 text-primary">Salient Features</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="bg-gradient-to-br from-blue-50 to-indigo-100 border-blue-200">
-              <CardHeader className="text-center">
-                <Globe className="h-12 w-12 text-blue-600 mx-auto mb-2" />
-                <CardTitle className="text-blue-800">Clear Examples</CardTitle>
-                <CardDescription>Real-world examples with detailed explanations</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="bg-gradient-to-br from-green-50 to-emerald-100 border-green-200">
-              <CardHeader className="text-center">
-                <CheckCircle className="h-12 w-12 text-green-600 mx-auto mb-2" />
-                <CardTitle className="text-green-800">Simple Explanations</CardTitle>
-                <CardDescription>Easy-to-understand examples with detailed explanations</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="bg-gradient-to-br from-purple-50 to-violet-100 border-purple-200">
-              <CardHeader className="text-center">
-                <BookOpenCheck className="h-12 w-12 text-purple-600 mx-auto mb-2" />
-                <CardTitle className="text-purple-800">Comprehensive Coverage</CardTitle>
-                <CardDescription>12+ essential grammar topics for complete learning</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="bg-gradient-to-br from-orange-50 to-amber-100 border-orange-200">
-              <CardHeader className="text-center">
-                <Lightbulb className="h-12 w-12 text-orange-600 mx-auto mb-2" />
-                <CardTitle className="text-orange-800">Interactive Design</CardTitle>
-                <CardDescription>Colorful, engaging interface with practice exercises</CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-        </div>
 
         {/* Table of Contents */}
         <Card className="mb-8">
