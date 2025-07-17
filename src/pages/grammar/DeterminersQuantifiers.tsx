@@ -1,7 +1,34 @@
 import GrammarLayout from "@/components/GrammarLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 const DeterminersQuantifiers = () => {
+  const [showAnswers, setShowAnswers] = useState(false);
+
+  const practiceQuestions = [
+    { question: "I have _____ friends in this city. (few/a few)", answer: "a few" },
+    { question: "There is _____ milk in the fridge. (little/a little)", answer: "a little" },
+    { question: "_____ students passed the exam. (Much/Many)", answer: "Many" },
+    { question: "I don't have _____ time today. (much/many)", answer: "much" },
+    { question: "_____ people came to the meeting. (Few/Little)", answer: "Few" },
+    { question: "There are _____ apples on the table. (some/any)", answer: "some" },
+    { question: "Do you have _____ questions? (some/any)", answer: "any" },
+    { question: "I need _____ information about this topic. (some/any)", answer: "some" },
+    { question: "_____ book on the shelf is mine. (Each/Every)", answer: "Each" },
+    { question: "_____ student must submit their assignment. (Each/Every)", answer: "Every" },
+    { question: "I visit my grandmother _____ Sunday. (each/every)", answer: "every" },
+    { question: "_____ of the answers is correct. (Either/Neither)", answer: "Either" },
+    { question: "_____ of them knows the truth. (Either/Neither)", answer: "Neither" },
+    { question: "_____ students and teachers attended the event. (Both/All)", answer: "Both" },
+    { question: "_____ the children were playing in the park. (Both/All)", answer: "All" },
+    { question: "I have _____ money left. (little/few)", answer: "little" },
+    { question: "There are _____ chairs in the room. (few/little)", answer: "few" },
+    { question: "Can I have _____ coffee, please? (some/any)", answer: "some" },
+    { question: "I don't want _____ sugar in my tea. (some/any)", answer: "any" },
+    { question: "_____ child in the class has a different talent. (Each/Every)", answer: "Each" }
+  ];
+
   return (
     <GrammarLayout
       title="Determiners & Quantifiers"
@@ -260,6 +287,38 @@ const DeterminersQuantifiers = () => {
                   <li>• I don't have any friends.</li>
                   <li>• Few students came to class.</li>
                 </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Practice Questions */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl">Practice Questions</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <p className="text-lg font-medium mb-4">Choose the correct determiner or quantifier to complete each sentence:</p>
+              
+              <div className="space-y-3">
+                {practiceQuestions.map((item, index) => (
+                  <div key={index} className="bg-secondary/10 p-4 rounded-lg">
+                    <p className="font-medium">{index + 1}. {item.question}</p>
+                    {showAnswers && (
+                      <p className="text-primary font-semibold mt-2">Answer: {item.answer}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <div className="text-center mt-6">
+                <Button 
+                  onClick={() => setShowAnswers(!showAnswers)}
+                  className="bg-gradient-to-r from-fuchsia-500 to-purple-500 hover:from-fuchsia-600 hover:to-purple-600 text-white px-8 py-3 text-lg"
+                >
+                  {showAnswers ? "Hide Answers" : "Check the Answers"}
+                </Button>
               </div>
             </div>
           </CardContent>

@@ -1,7 +1,34 @@
 import GrammarLayout from "@/components/GrammarLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 const CausativeVerbs = () => {
+  const [showAnswers, setShowAnswers] = useState(false);
+
+  const practiceQuestions = [
+    { question: "I will _____ my brother clean his room. (make)", answer: "make" },
+    { question: "She _____ her hair cut at the salon. (have)", answer: "had" },
+    { question: "Please _____ me help you with that. (let)", answer: "let" },
+    { question: "He _____ his car repaired yesterday. (get)", answer: "got" },
+    { question: "The teacher _____ the students write an essay. (have)", answer: "had" },
+    { question: "Don't _____ the children play outside in the rain. (let)", answer: "let" },
+    { question: "I need to _____ my computer fixed. (get)", answer: "get" },
+    { question: "She _____ him apologize for his mistake. (make)", answer: "made" },
+    { question: "We _____ our house painted last month. (have)", answer: "had" },
+    { question: "Please _____ me know when you arrive. (let)", answer: "let" },
+    { question: "He _____ his team work harder. (make)", answer: "makes" },
+    { question: "I will _____ my shoes repaired tomorrow. (get)", answer: "get" },
+    { question: "The boss _____ all employees attend the meeting. (have)", answer: "had" },
+    { question: "_____ me see that photo, please. (let)", answer: "Let" },
+    { question: "The rain _____ us cancel our picnic. (make)", answer: "made" },
+    { question: "She _____ her nails done at the beauty salon. (get)", answer: "got" },
+    { question: "I _____ my son practice piano every day. (have)", answer: "have" },
+    { question: "Please _____ the dog come inside. (let)", answer: "let" },
+    { question: "This medicine will _____ you feel better. (make)", answer: "make" },
+    { question: "We _____ our garden redesigned by a professional. (get)", answer: "got" }
+  ];
+
   return (
     <GrammarLayout
       title="Causative Verbs"
@@ -148,6 +175,37 @@ const CausativeVerbs = () => {
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="font-semibold mb-2">Explanation:</h4>
                 <p>In passive causative forms, we focus on what happens to the object rather than who does the action.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+        {/* Practice Questions */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl">Practice Questions</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <p className="text-lg font-medium mb-4">Complete these sentences with the correct form of the causative verb:</p>
+              
+              <div className="space-y-3">
+                {practiceQuestions.map((item, index) => (
+                  <div key={index} className="bg-secondary/10 p-4 rounded-lg">
+                    <p className="font-medium">{index + 1}. {item.question}</p>
+                    {showAnswers && (
+                      <p className="text-primary font-semibold mt-2">Answer: {item.answer}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <div className="text-center mt-6">
+                <Button 
+                  onClick={() => setShowAnswers(!showAnswers)}
+                  className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white px-8 py-3 text-lg"
+                >
+                  {showAnswers ? "Hide Answers" : "Check the Answers"}
+                </Button>
               </div>
             </div>
           </CardContent>

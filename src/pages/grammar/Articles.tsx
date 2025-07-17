@@ -1,8 +1,35 @@
 import GrammarLayout from "@/components/GrammarLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 const Articles = () => {
+  const [showAnswers, setShowAnswers] = useState(false);
+
+  const practiceQuestions = [
+    { question: "I need _____ pen to write.", answer: "a" },
+    { question: "_____ book you lent me was excellent.", answer: "The" },
+    { question: "She is _____ engineer.", answer: "an" },
+    { question: "_____ Mount Everest is _____ highest mountain.", answer: "(no article), the" },
+    { question: "I drink _____ coffee every morning.", answer: "(no article)" },
+    { question: "Can you pass me _____ salt, please?", answer: "the" },
+    { question: "He is _____ honest man.", answer: "an" },
+    { question: "_____ dogs are loyal animals.", answer: "(no article)" },
+    { question: "I saw _____ amazing movie last night.", answer: "an" },
+    { question: "_____ Pacific Ocean is very deep.", answer: "The" },
+    { question: "She wants to be _____ doctor.", answer: "a" },
+    { question: "_____ water in this bottle is cold.", answer: "The" },
+    { question: "I need _____ hour to finish this work.", answer: "an" },
+    { question: "_____ children are playing in the park.", answer: "The" },
+    { question: "He bought _____ new car yesterday.", answer: "a" },
+    { question: "_____ music helps me relax.", answer: "(no article)" },
+    { question: "She is _____ best student in our class.", answer: "the" },
+    { question: "I have _____ uncle who lives in Canada.", answer: "an" },
+    { question: "_____ rich should help _____ poor.", answer: "The, the" },
+    { question: "He is reading _____ interesting book about history.", answer: "an" }
+  ];
+
   return (
     <GrammarLayout 
       title="Articles" 
@@ -152,33 +179,33 @@ const Articles = () => {
           </CardContent>
         </Card>
 
-        {/* Practice Examples */}
+        {/* Practice Questions */}
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl">Practice Examples</CardTitle>
+            <CardTitle className="text-2xl">Practice Questions</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              <div>
-                <h3 className="text-lg font-semibold mb-3">Complete these sentences:</h3>
-                <div className="space-y-2 bg-secondary/10 p-4 rounded-lg">
-                  <p>1. I need _____ pen to write.</p>
-                  <p>2. _____ book you lent me was excellent.</p>
-                  <p>3. She is _____ engineer.</p>
-                  <p>4. _____ Mount Everest is _____ highest mountain.</p>
-                  <p>5. I drink _____ coffee every morning.</p>
-                </div>
-              </div>
+              <p className="text-lg font-medium mb-4">Complete these sentences with the correct article (a, an, the) or write "no article" if none is needed:</p>
               
-              <div>
-                <h3 className="text-lg font-semibold mb-3">Answers:</h3>
-                <div className="space-y-2 bg-primary/10 p-4 rounded-lg">
-                  <p>1. I need <strong>a</strong> pen to write.</p>
-                  <p>2. <strong>The</strong> book you lent me was excellent.</p>
-                  <p>3. She is <strong>an</strong> engineer.</p>
-                  <p>4. <strong>(no article)</strong> Mount Everest is <strong>the</strong> highest mountain.</p>
-                  <p>5. I drink <strong>(no article)</strong> coffee every morning.</p>
-                </div>
+              <div className="space-y-3">
+                {practiceQuestions.map((item, index) => (
+                  <div key={index} className="bg-secondary/10 p-4 rounded-lg">
+                    <p className="font-medium">{index + 1}. {item.question}</p>
+                    {showAnswers && (
+                      <p className="text-primary font-semibold mt-2">Answer: {item.answer}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <div className="text-center mt-6">
+                <Button 
+                  onClick={() => setShowAnswers(!showAnswers)}
+                  className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 py-3 text-lg"
+                >
+                  {showAnswers ? "Hide Answers" : "Check the Answers"}
+                </Button>
               </div>
             </div>
           </CardContent>

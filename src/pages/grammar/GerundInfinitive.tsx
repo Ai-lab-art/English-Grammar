@@ -1,7 +1,34 @@
 import GrammarLayout from "@/components/GrammarLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 const GerundInfinitive = () => {
+  const [showAnswers, setShowAnswers] = useState(false);
+
+  const practiceQuestions = [
+    { question: "I enjoy _____ (read/reading/to read) books.", answer: "reading" },
+    { question: "She decided _____ (go/going/to go) to the party.", answer: "to go" },
+    { question: "_____ (Swim/Swimming/To swim) is good exercise.", answer: "Swimming" },
+    { question: "He wants _____ (learn/learning/to learn) Spanish.", answer: "to learn" },
+    { question: "I finished _____ (do/doing/to do) my homework.", answer: "doing" },
+    { question: "They plan _____ (visit/visiting/to visit) Europe.", answer: "to visit" },
+    { question: "I avoid _____ (eat/eating/to eat) fast food.", answer: "eating" },
+    { question: "She hopes _____ (become/becoming/to become) a doctor.", answer: "to become" },
+    { question: "_____ (Cook/Cooking/To cook) is her hobby.", answer: "Cooking" },
+    { question: "He refused _____ (help/helping/to help) us.", answer: "to help" },
+    { question: "I suggest _____ (take/taking/to take) a break.", answer: "taking" },
+    { question: "They agreed _____ (meet/meeting/to meet) tomorrow.", answer: "to meet" },
+    { question: "I miss _____ (see/seeing/to see) my family.", answer: "seeing" },
+    { question: "She offered _____ (help/helping/to help) me.", answer: "to help" },
+    { question: "_____ (Dance/Dancing/To dance) makes me happy.", answer: "Dancing" },
+    { question: "He promised _____ (call/calling/to call) me.", answer: "to call" },
+    { question: "I can't stand _____ (wait/waiting/to wait) in long lines.", answer: "waiting" },
+    { question: "They chose _____ (stay/staying/to stay) home.", answer: "to stay" },
+    { question: "I love _____ (travel/traveling/to travel) to new places.", answer: "traveling" },
+    { question: "She managed _____ (finish/finishing/to finish) the project.", answer: "to finish" }
+  ];
+
   return (
     <GrammarLayout
       title="Gerund & Infinitive"
@@ -258,6 +285,38 @@ const GerundInfinitive = () => {
                   <li>• I'm interested in learning French.</li>
                   <li>• Swimming is good exercise.</li>
                 </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Practice Questions */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl">Practice Questions</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <p className="text-lg font-medium mb-4">Choose the correct form (gerund or infinitive) to complete each sentence:</p>
+              
+              <div className="space-y-3">
+                {practiceQuestions.map((item, index) => (
+                  <div key={index} className="bg-secondary/10 p-4 rounded-lg">
+                    <p className="font-medium">{index + 1}. {item.question}</p>
+                    {showAnswers && (
+                      <p className="text-primary font-semibold mt-2">Answer: {item.answer}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <div className="text-center mt-6">
+                <Button 
+                  onClick={() => setShowAnswers(!showAnswers)}
+                  className="bg-gradient-to-r from-green-500 to-lime-500 hover:from-green-600 hover:to-lime-600 text-white px-8 py-3 text-lg"
+                >
+                  {showAnswers ? "Hide Answers" : "Check the Answers"}
+                </Button>
               </div>
             </div>
           </CardContent>

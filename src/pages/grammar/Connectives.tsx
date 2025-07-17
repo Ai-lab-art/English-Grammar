@@ -1,7 +1,34 @@
 import GrammarLayout from "@/components/GrammarLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 const Connectives = () => {
+  const [showAnswers, setShowAnswers] = useState(false);
+
+  const practiceQuestions = [
+    { question: "I was tired, _____ I went to bed early. (so/but)", answer: "so" },
+    { question: "She studied hard _____ she failed the exam. (but/and)", answer: "but" },
+    { question: "_____ it was raining, we went for a walk. (Although/Because)", answer: "Although" },
+    { question: "He is tall _____ his brother is short. (while/because)", answer: "while" },
+    { question: "I will call you _____ I arrive home. (when/if)", answer: "when" },
+    { question: "She speaks English fluently _____ she has lived abroad. (because/unless)", answer: "because" },
+    { question: "We can go to the movies _____ stay home. (or/and)", answer: "or" },
+    { question: "_____ you finish your homework, you can watch TV. (After/Before)", answer: "After" },
+    { question: "He didn't come to the party _____ he was sick. (because/although)", answer: "because" },
+    { question: "I like coffee _____ my sister prefers tea. (but/so)", answer: "but" },
+    { question: "_____ I was walking, I saw an accident. (While/Until)", answer: "While" },
+    { question: "Study hard _____ you will fail. (or/and)", answer: "or" },
+    { question: "_____ the traffic was heavy, we arrived on time. (Despite/Although)", answer: "Although" },
+    { question: "I'll wait here _____ you come back. (until/unless)", answer: "until" },
+    { question: "She is smart _____ hardworking. (and/but)", answer: "and" },
+    { question: "_____ you don't study, you won't pass. (If/Unless)", answer: "If" },
+    { question: "He went to work _____ feeling sick. (despite/because)", answer: "despite" },
+    { question: "I was late _____ there was a traffic jam. (because/although)", answer: "because" },
+    { question: "_____ the rain stopped, we continued our journey. (When/While)", answer: "When" },
+    { question: "She is beautiful _____ intelligent. (and/but)", answer: "and" }
+  ];
+
   return (
     <GrammarLayout
       title="Connectives"
@@ -188,6 +215,38 @@ const Connectives = () => {
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="font-semibold mb-2">Usage Tips:</h4>
                 <p>Use these to show what must happen for something else to occur.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Practice Questions */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl">Practice Questions</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <p className="text-lg font-medium mb-4">Choose the correct connective to complete each sentence:</p>
+              
+              <div className="space-y-3">
+                {practiceQuestions.map((item, index) => (
+                  <div key={index} className="bg-secondary/10 p-4 rounded-lg">
+                    <p className="font-medium">{index + 1}. {item.question}</p>
+                    {showAnswers && (
+                      <p className="text-primary font-semibold mt-2">Answer: {item.answer}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <div className="text-center mt-6">
+                <Button 
+                  onClick={() => setShowAnswers(!showAnswers)}
+                  className="bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 text-white px-8 py-3 text-lg"
+                >
+                  {showAnswers ? "Hide Answers" : "Check the Answers"}
+                </Button>
               </div>
             </div>
           </CardContent>

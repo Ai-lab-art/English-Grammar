@@ -77,29 +77,24 @@ const TableOfContents = () => {
             <CardContent>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {grammarTopics.map((topic, index) => (
-                  <Card key={topic.id} className="hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 overflow-hidden">
-                    <CardHeader className={`${topic.color} text-white relative`}>
-                      <div className="absolute inset-0 bg-black/10"></div>
-                      <div className="relative z-10">
-                        <div className="flex items-center gap-3 mb-2">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-800 text-lg font-bold shadow-lg">
-                            {index + 1}
+                  <Link key={topic.id} to={`/grammar/${topic.id}`}>
+                    <Card className="hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 overflow-hidden cursor-pointer">
+                      <CardHeader className={`${topic.color} text-white relative`}>
+                        <div className="absolute inset-0 bg-black/10"></div>
+                        <div className="relative z-10">
+                          <div className="flex items-center gap-3 mb-2">
+                            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-800 text-lg font-bold shadow-lg">
+                              {index + 1}
+                            </div>
+                            <CardTitle className="text-xl text-white drop-shadow-lg">{topic.title}</CardTitle>
                           </div>
-                          <CardTitle className="text-xl text-white drop-shadow-lg">{topic.title}</CardTitle>
+                          <CardDescription className="text-white/90 text-sm drop-shadow">
+                            {topic.description}
+                          </CardDescription>
                         </div>
-                        <CardDescription className="text-white/90 text-sm drop-shadow">
-                          {topic.description}
-                        </CardDescription>
-                      </div>
-                    </CardHeader>
-                    <CardContent className="pt-6 bg-gradient-to-b from-white to-gray-50">
-                      <Button asChild className={`w-full ${topic.color} text-white font-semibold hover:scale-105 transition-transform shadow-lg border-0`}>
-                        <Link to={`/grammar/${topic.id}`}>
-                          Start Learning
-                        </Link>
-                      </Button>
-                    </CardContent>
-                  </Card>
+                      </CardHeader>
+                    </Card>
+                  </Link>
                 ))}
               </div>
             </CardContent>

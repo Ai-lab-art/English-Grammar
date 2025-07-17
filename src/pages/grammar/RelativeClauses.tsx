@@ -1,7 +1,34 @@
 import GrammarLayout from "@/components/GrammarLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 const RelativeClauses = () => {
+  const [showAnswers, setShowAnswers] = useState(false);
+
+  const practiceQuestions = [
+    { question: "The man _____ is wearing a red shirt is my teacher. (who/which)", answer: "who" },
+    { question: "The book _____ I bought yesterday is very interesting. (that/who)", answer: "that" },
+    { question: "The house _____ we live in is very old. (where/which)", answer: "which" },
+    { question: "This is the place _____ I was born. (where/when)", answer: "where" },
+    { question: "The woman _____ car was stolen called the police. (whose/who)", answer: "whose" },
+    { question: "I remember the day _____ we first met. (when/where)", answer: "when" },
+    { question: "The students _____ study hard will pass the exam. (who/which)", answer: "who" },
+    { question: "The movie _____ we watched last night was boring. (that/who)", answer: "that" },
+    { question: "The restaurant _____ we had dinner was expensive. (where/which)", answer: "where" },
+    { question: "The reason _____ he left early is unknown. (why/when)", answer: "why" },
+    { question: "The girl _____ is sitting next to me is my sister. (who/which)", answer: "who" },
+    { question: "The computer _____ I use for work is very fast. (that/who)", answer: "that" },
+    { question: "The school _____ I studied is now closed. (where/when)", answer: "where" },
+    { question: "The time _____ the store opens is 9 AM. (when/where)", answer: "when" },
+    { question: "The person _____ bag this is should claim it. (whose/who)", answer: "whose" },
+    { question: "The year _____ I graduated was 2020. (when/where)", answer: "when" },
+    { question: "The people _____ live next door are very friendly. (who/which)", answer: "who" },
+    { question: "The phone _____ is ringing belongs to John. (that/who)", answer: "that" },
+    { question: "The city _____ I want to visit is Paris. (where/which)", answer: "which" },
+    { question: "The moment _____ I saw her, I knew she was special. (when/where)", answer: "when" }
+  ];
+
   return (
     <GrammarLayout
       title="Relative Clauses"
@@ -241,6 +268,38 @@ const RelativeClauses = () => {
                   <li>• My brother, <strong>who lives in London</strong>, is a doctor.</li>
                   <li>• Shakespeare, <strong>who wrote Hamlet</strong>, was English.</li>
                 </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Practice Questions */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl">Practice Questions</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <p className="text-lg font-medium mb-4">Choose the correct relative pronoun to complete each sentence:</p>
+              
+              <div className="space-y-3">
+                {practiceQuestions.map((item, index) => (
+                  <div key={index} className="bg-secondary/10 p-4 rounded-lg">
+                    <p className="font-medium">{index + 1}. {item.question}</p>
+                    {showAnswers && (
+                      <p className="text-primary font-semibold mt-2">Answer: {item.answer}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <div className="text-center mt-6">
+                <Button 
+                  onClick={() => setShowAnswers(!showAnswers)}
+                  className="bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-white px-8 py-3 text-lg"
+                >
+                  {showAnswers ? "Hide Answers" : "Check the Answers"}
+                </Button>
               </div>
             </div>
           </CardContent>

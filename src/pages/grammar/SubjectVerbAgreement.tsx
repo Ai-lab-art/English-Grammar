@@ -1,7 +1,34 @@
 import GrammarLayout from "@/components/GrammarLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 const SubjectVerbAgreement = () => {
+  const [showAnswers, setShowAnswers] = useState(false);
+
+  const practiceQuestions = [
+    { question: "The dog _____ (bark/barks) loudly every morning.", answer: "barks" },
+    { question: "My friends _____ (is/are) coming to the party.", answer: "are" },
+    { question: "Either John or his sisters _____ (is/are) responsible.", answer: "are" },
+    { question: "The news _____ (is/are) very important today.", answer: "is" },
+    { question: "Mathematics _____ (is/are) my favorite subject.", answer: "is" },
+    { question: "The team _____ (has/have) won the championship.", answer: "has" },
+    { question: "Neither the teacher nor the students _____ (was/were) ready.", answer: "were" },
+    { question: "Physics _____ (requires/require) a lot of practice.", answer: "requires" },
+    { question: "The scissors _____ (is/are) on the table.", answer: "are" },
+    { question: "Everyone _____ (has/have) to submit their homework.", answer: "has" },
+    { question: "The United States _____ (is/are) a large country.", answer: "is" },
+    { question: "Ten dollars _____ (is/are) enough for lunch.", answer: "is" },
+    { question: "The committee _____ (meets/meet) every Tuesday.", answer: "meets" },
+    { question: "Neither of the answers _____ (is/are) correct.", answer: "is" },
+    { question: "The police _____ (has/have) arrested the suspect.", answer: "have" },
+    { question: "Each of the students _____ (has/have) a textbook.", answer: "has" },
+    { question: "The cattle _____ (is/are) grazing in the field.", answer: "are" },
+    { question: "There _____ (is/are) many books on the shelf.", answer: "are" },
+    { question: "The family _____ (is/are) planning a vacation.", answer: "is" },
+    { question: "Some of the cake _____ (was/were) eaten.", answer: "was" }
+  ];
+
   return (
     <GrammarLayout
       title="Subject-Verb Agreement"
@@ -180,6 +207,37 @@ const SubjectVerbAgreement = () => {
                   <li>• There <strong>are</strong> books on the table.</li>
                   <li>• There <strong>is</strong> coffee and tea in the kitchen.</li>
                 </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+        {/* Practice Questions */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl">Practice Questions</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <p className="text-lg font-medium mb-4">Choose the correct verb form to complete each sentence:</p>
+              
+              <div className="space-y-3">
+                {practiceQuestions.map((item, index) => (
+                  <div key={index} className="bg-secondary/10 p-4 rounded-lg">
+                    <p className="font-medium">{index + 1}. {item.question}</p>
+                    {showAnswers && (
+                      <p className="text-primary font-semibold mt-2">Answer: {item.answer}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <div className="text-center mt-6">
+                <Button 
+                  onClick={() => setShowAnswers(!showAnswers)}
+                  className="bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white px-8 py-3 text-lg"
+                >
+                  {showAnswers ? "Hide Answers" : "Check the Answers"}
+                </Button>
               </div>
             </div>
           </CardContent>
