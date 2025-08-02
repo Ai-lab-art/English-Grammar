@@ -365,23 +365,23 @@ const Voice = () => {
           </CardContent>
         </Card>
 
-        {/* Emotional Verbs in Passive */}
+        {/* Verbs of Perception and Feeling in Passive */}
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl">Emotional Verbs: Active vs Passive</CardTitle>
+            <CardTitle className="text-2xl">Verbs of Perception and Feeling: Active vs Passive</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
             <div>
-              <h3 className="text-xl font-semibold mb-3">Emotional Verbs: Active vs Passive</h3>
+              <h3 className="text-xl font-semibold mb-3">Verbs of Perception and Feeling: Active vs Passive</h3>
               <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded border border-blue-200 dark:border-blue-800 mb-4">
                 <h4 className="font-semibold mb-2">🌍 English Explanation:</h4>
-                <p>Many emotional verbs can be transformed from active to passive voice. In the active voice, we mention who is doing the action. In the passive voice, we focus on the person experiencing the emotion and use "being + past participle" to show what is happening to them.</p>
+                <p>Verbs of perception and feeling can be transformed from active to passive voice. In the active voice, we mention who is doing the action. In the passive voice, we focus on the person experiencing the perception or feeling and use "being + past participle" to show what is happening to them.</p>
                 
                 <h4 className="font-semibold mb-2 mt-4">🇳🇵 नेपाली व्याख्या:</h4>
-                <p>धेरै भावनात्मक क्रियाहरूलाई सक्रिय वाच्यबाट निष्क्रिय वाच्यमा परिवर्तन गर्न सकिन्छ। सक्रिय वाच्यमा हामी कसले काम गरिरहेको छ भनेर उल्लेख गर्छौं। निष्क्रिय वाच्यमा हामी भावना अनुभव गरिरहेको व्यक्तिमा केन्द्रित हुन्छौं र "being + past participle" प्रयोग गरेर उनीहरूमा के भइरहेको छ भनेर देखाउँछौं।</p>
+                <p>धारणा र भावनाका क्रियाहरूलाई सक्रिय वाच्यबाट निष्क्रिय वाच्यमा परिवर्तन गर्न सकिन्छ। सक्रिय वाच्यमा हामी कसले काम गरिरहेको छ भनेर उल्लेख गर्छौं। निष्क्रिय वाच्यमा हामी धारणा वा भावना अनुभव गरिरहेको व्यक्तिमा केन्द्रित हुन्छौं र "being + past participle" प्रयोग गरेर उनीहरूमा के भइरहेको छ भनेर देखाउँछौं।</p>
               </div>
               
-              <p className="mb-4">Many emotional verbs can be transformed from active to passive voice. The passive form often uses gerunds (being + past participle):</p>
+              <p className="mb-4">Verbs of perception and feeling can be transformed from active to passive voice. The passive form often uses gerunds (being + past participle):</p>
               
               <div className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
