@@ -365,6 +365,61 @@ const Voice = () => {
           </CardContent>
         </Card>
 
+        {/* Emotional Verbs in Passive */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl">Emotional Verbs: Active vs Passive</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Verbs of Emotion and Perception</h3>
+              <p className="mb-4">Many emotional verbs can be transformed from active to passive voice. The passive form often uses gerunds (being + past participle):</p>
+              
+              <div className="space-y-4">
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-primary">Active Voice</h4>
+                    <div className="space-y-3 bg-primary/10 p-4 rounded">
+                      <p>• I hate people interrupting me.</p>
+                      <p>• She enjoys someone massaging her back.</p>
+                      <p>• He remembers people praising his efforts.</p>
+                      <p>• They mentioned the teacher scolding them.</p>
+                      <p>• We appreciate others recognizing our work.</p>
+                      <p>• She disliked the manager blaming her.</p>
+                      <p>• I can't stand people lying to me.</p>
+                      <p>• He was proud of people admiring his painting.</p>
+                      <p>• I remember people giving me awards.</p>
+                      <p>• She regrets people having ignored her warnings.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-secondary">Passive Voice</h4>
+                    <div className="space-y-3 bg-secondary/10 p-4 rounded">
+                      <p>• I hate <strong>being interrupted</strong>.</p>
+                      <p>• She enjoys <strong>being massaged</strong>.</p>
+                      <p>• He remembers <strong>being praised</strong>.</p>
+                      <p>• They mentioned <strong>being scolded</strong>.</p>
+                      <p>• We appreciate <strong>being recognized</strong>.</p>
+                      <p>• She disliked <strong>being blamed</strong>.</p>
+                      <p>• I can't stand <strong>being lied to</strong>.</p>
+                      <p>• He was proud of <strong>being admired</strong>.</p>
+                      <p>• I remember <strong>being given awards</strong>.</p>
+                      <p>• She regrets <strong>having been ignored</strong>.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded border border-yellow-200 dark:border-yellow-800">
+                <h4 className="font-semibold mb-2">💡 Pattern:</h4>
+                <p><strong>Active:</strong> Verb + (someone/people) + gerund/infinitive</p>
+                <p><strong>Passive:</strong> Verb + being + past participle</p>
+                <p className="mt-2 text-sm">For perfect forms: having been + past participle</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Practice Section */}
         <Card>
           <CardHeader>
