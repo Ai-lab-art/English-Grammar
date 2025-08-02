@@ -372,49 +372,126 @@ const Voice = () => {
           </CardHeader>
           <CardContent className="space-y-6">
             <div>
-              <h3 className="text-xl font-semibold mb-3">Verbs of Emotion and Perception</h3>
+              <h3 className="text-xl font-semibold mb-3">Emotional Verbs: Active vs Passive</h3>
+              <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded border border-blue-200 dark:border-blue-800 mb-4">
+                <h4 className="font-semibold mb-2">🌍 English Explanation:</h4>
+                <p>Many emotional verbs can be transformed from active to passive voice. In the active voice, we mention who is doing the action. In the passive voice, we focus on the person experiencing the emotion and use "being + past participle" to show what is happening to them.</p>
+                
+                <h4 className="font-semibold mb-2 mt-4">🇳🇵 नेपाली व्याख्या:</h4>
+                <p>धेरै भावनात्मक क्रियाहरूलाई सक्रिय वाच्यबाट निष्क्रिय वाच्यमा परिवर्तन गर्न सकिन्छ। सक्रिय वाच्यमा हामी कसले काम गरिरहेको छ भनेर उल्लेख गर्छौं। निष्क्रिय वाच्यमा हामी भावना अनुभव गरिरहेको व्यक्तिमा केन्द्रित हुन्छौं र "being + past participle" प्रयोग गरेर उनीहरूमा के भइरहेको छ भनेर देखाउँछौं।</p>
+              </div>
+              
               <p className="mb-4">Many emotional verbs can be transformed from active to passive voice. The passive form often uses gerunds (being + past participle):</p>
               
               <div className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <h4 className="font-semibold mb-3 text-primary">Active Voice</h4>
+                    <h4 className="font-semibold mb-3 text-primary">Active Voice (सक्रिय वाच्य)</h4>
                     <div className="space-y-3 bg-primary/10 p-4 rounded">
-                      <p>• I hate people interrupting me.</p>
-                      <p>• She enjoys someone massaging her back.</p>
-                      <p>• He remembers people praising his efforts.</p>
-                      <p>• They mentioned the teacher scolding them.</p>
-                      <p>• We appreciate others recognizing our work.</p>
-                      <p>• She disliked the manager blaming her.</p>
-                      <p>• I can't stand people lying to me.</p>
-                      <p>• He was proud of people admiring his painting.</p>
-                      <p>• I remember people giving me awards.</p>
-                      <p>• She regrets people having ignored her warnings.</p>
+                      <div className="border-b border-primary/20 pb-2">
+                        <p className="font-medium">• I hate people interrupting me.</p>
+                        <p className="text-sm text-muted-foreground italic">म मलाई बाधा पुर्‍याउने मानिसहरूलाई घृणा गर्छु।</p>
+                      </div>
+                      <div className="border-b border-primary/20 pb-2">
+                        <p className="font-medium">• She enjoys someone massaging her back.</p>
+                        <p className="text-sm text-muted-foreground italic">उनलाई कसैले ढाड मिच्दा मन पर्छ।</p>
+                      </div>
+                      <div className="border-b border-primary/20 pb-2">
+                        <p className="font-medium">• He remembers people praising his efforts.</p>
+                        <p className="text-sm text-muted-foreground italic">उसलाई मानिसहरूले आफ्नो प्रयासको प्रशंसा गरेको याद छ।</p>
+                      </div>
+                      <div className="border-b border-primary/20 pb-2">
+                        <p className="font-medium">• They mentioned the teacher scolding them.</p>
+                        <p className="text-sm text-muted-foreground italic">उनीहरूले शिक्षकले उनीहरूलाई हप्काएको कुरा भने।</p>
+                      </div>
+                      <div className="border-b border-primary/20 pb-2">
+                        <p className="font-medium">• We appreciate others recognizing our work.</p>
+                        <p className="text-sm text-muted-foreground italic">हामी अरूले हाम्रो कामको पहिचान गर्नुको कदर गर्छौं।</p>
+                      </div>
+                      <div className="border-b border-primary/20 pb-2">
+                        <p className="font-medium">• She disliked the manager blaming her.</p>
+                        <p className="text-sm text-muted-foreground italic">म्यानेजरले उनलाई दोष दिएको उनलाई मन परेन।</p>
+                      </div>
+                      <div className="border-b border-primary/20 pb-2">
+                        <p className="font-medium">• I can't stand people lying to me.</p>
+                        <p className="text-sm text-muted-foreground italic">म मलाई झूट बोल्ने मानिसहरूलाई सहन सक्दिन।</p>
+                      </div>
+                      <div className="border-b border-primary/20 pb-2">
+                        <p className="font-medium">• He was proud of people admiring his painting.</p>
+                        <p className="text-sm text-muted-foreground italic">मानिसहरूले उसको चित्रकलाको प्रशंसा गरेकोमा उसलाई गर्व थियो।</p>
+                      </div>
+                      <div className="border-b border-primary/20 pb-2">
+                        <p className="font-medium">• I remember people giving me awards.</p>
+                        <p className="text-sm text-muted-foreground italic">मलाई मानिसहरूले पुरस्कार दिएको याद छ।</p>
+                      </div>
+                      <div>
+                        <p className="font-medium">• She regrets people having ignored her warnings.</p>
+                        <p className="text-sm text-muted-foreground italic">मानिसहरूले उनका चेतावनीहरूलाई बेवास्ता गरेकोमा उनलाई पछुतो छ।</p>
+                      </div>
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3 text-secondary">Passive Voice</h4>
+                    <h4 className="font-semibold mb-3 text-secondary">Passive Voice (निष्क्रिय वाच्य)</h4>
                     <div className="space-y-3 bg-secondary/10 p-4 rounded">
-                      <p>• I hate <strong>being interrupted</strong>.</p>
-                      <p>• She enjoys <strong>being massaged</strong>.</p>
-                      <p>• He remembers <strong>being praised</strong>.</p>
-                      <p>• They mentioned <strong>being scolded</strong>.</p>
-                      <p>• We appreciate <strong>being recognized</strong>.</p>
-                      <p>• She disliked <strong>being blamed</strong>.</p>
-                      <p>• I can't stand <strong>being lied to</strong>.</p>
-                      <p>• He was proud of <strong>being admired</strong>.</p>
-                      <p>• I remember <strong>being given awards</strong>.</p>
-                      <p>• She regrets <strong>having been ignored</strong>.</p>
+                      <div className="border-b border-secondary/20 pb-2">
+                        <p className="font-medium">• I hate <strong>being interrupted</strong>.</p>
+                        <p className="text-sm text-muted-foreground italic">म बाधा पुर्‍याइनुलाई घृणा गर्छु।</p>
+                      </div>
+                      <div className="border-b border-secondary/20 pb-2">
+                        <p className="font-medium">• She enjoys <strong>being massaged</strong>.</p>
+                        <p className="text-sm text-muted-foreground italic">उनलाई मालिश गरिनु मन पर्छ।</p>
+                      </div>
+                      <div className="border-b border-secondary/20 pb-2">
+                        <p className="font-medium">• He remembers <strong>being praised</strong>.</p>
+                        <p className="text-sm text-muted-foreground italic">उसलाई प्रशंसा गरिएको याद छ।</p>
+                      </div>
+                      <div className="border-b border-secondary/20 pb-2">
+                        <p className="font-medium">• They mentioned <strong>being scolded</strong>.</p>
+                        <p className="text-sm text-muted-foreground italic">उनीहरूले हप्काइएको कुरा भने।</p>
+                      </div>
+                      <div className="border-b border-secondary/20 pb-2">
+                        <p className="font-medium">• We appreciate <strong>being recognized</strong>.</p>
+                        <p className="text-sm text-muted-foreground italic">हामी पहिचान पाउनुको कदर गर्छौं।</p>
+                      </div>
+                      <div className="border-b border-secondary/20 pb-2">
+                        <p className="font-medium">• She disliked <strong>being blamed</strong>.</p>
+                        <p className="text-sm text-muted-foreground italic">उनलाई दोष लगाइनु मन परेन।</p>
+                      </div>
+                      <div className="border-b border-secondary/20 pb-2">
+                        <p className="font-medium">• I can't stand <strong>being lied to</strong>.</p>
+                        <p className="text-sm text-muted-foreground italic">म झूट भनिनुलाई सहन सक्दिन।</p>
+                      </div>
+                      <div className="border-b border-secondary/20 pb-2">
+                        <p className="font-medium">• He was proud of <strong>being admired</strong>.</p>
+                        <p className="text-sm text-muted-foreground italic">उसलाई प्रशंसा पाउनुमा गर्व थियो।</p>
+                      </div>
+                      <div className="border-b border-secondary/20 pb-2">
+                        <p className="font-medium">• I remember <strong>being given awards</strong>.</p>
+                        <p className="text-sm text-muted-foreground italic">मलाई पुरस्कार दिइएको याद छ।</p>
+                      </div>
+                      <div>
+                        <p className="font-medium">• She regrets <strong>having been ignored</strong>.</p>
+                        <p className="text-sm text-muted-foreground italic">उनलाई बेवास्ता गरिएकोमा पछुतो छ।</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               
               <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded border border-yellow-200 dark:border-yellow-800">
-                <h4 className="font-semibold mb-2">💡 Pattern:</h4>
-                <p><strong>Active:</strong> Verb + (someone/people) + gerund/infinitive</p>
-                <p><strong>Passive:</strong> Verb + being + past participle</p>
+                <h4 className="font-semibold mb-2">💡 Pattern (ढाँचा):</h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <p><strong>Active:</strong> Verb + (someone/people) + gerund/infinitive</p>
+                    <p className="text-sm text-muted-foreground italic">सक्रिय: क्रिया + (कोही/मानिसहरू) + gerund/infinitive</p>
+                  </div>
+                  <div>
+                    <p><strong>Passive:</strong> Verb + being + past participle</p>
+                    <p className="text-sm text-muted-foreground italic">निष्क्रिय: क्रिया + being + past participle</p>
+                  </div>
+                </div>
                 <p className="mt-2 text-sm">For perfect forms: having been + past participle</p>
+                <p className="text-sm text-muted-foreground italic">पूर्ण रूपका लागि: having been + past participle</p>
               </div>
             </div>
           </CardContent>
