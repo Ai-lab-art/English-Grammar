@@ -3,8 +3,11 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AuthProvider } from "@/components/auth/AuthProvider";
+import { AdminControls } from "@/components/admin/AdminControls";
 import Index from "./pages/Index";
 import TableOfContents from "./pages/TableOfContents";
+import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 import Articles from "./pages/grammar/Articles";
 import Prepositions from "./pages/grammar/Prepositions";
@@ -30,12 +33,15 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/topics" element={<TableOfContents />} />
+      <AuthProvider>
+        <Toaster />
+        <Sonner />
+        <AdminControls />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/topics" element={<TableOfContents />} />
+            <Route path="/auth" element={<Auth />} />
           <Route path="/grammar/articles" element={<Articles />} />
           <Route path="/grammar/prepositions" element={<Prepositions />} />
           <Route path="/grammar/tag-questions" element={<TagQuestions />} />
@@ -58,6 +64,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      </AuthProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );
