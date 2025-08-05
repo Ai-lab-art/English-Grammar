@@ -61,21 +61,12 @@ const Index = () => {
         </div>
 
         {/* Start Button */}
-        <div className="pt-12 flex gap-4 justify-center">
+        <div className="pt-12 flex justify-center">
           <Button asChild size="lg" className="text-2xl px-16 py-8 h-auto rounded-full bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white/30 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
             <Link to="/topics">
               Start
             </Link>
           </Button>
-          {!user && (
-            <Button 
-              size="lg" 
-              onClick={() => navigate('/auth')}
-              className="text-lg px-8 py-6 h-auto rounded-full bg-primary/20 backdrop-blur-sm text-white border border-primary/30 hover:bg-primary/30 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-            >
-              Admin Login
-            </Button>
-          )}
         </div>
 
         {/* Social Media Sharing */}
