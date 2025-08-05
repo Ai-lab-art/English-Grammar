@@ -549,6 +549,160 @@ const Prepositions = () => {
           </CardContent>
         </Card>
 
+        {/* Additional Prepositional Phrases */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl">Common Prepositional Phrases (सामान्य पूर्वसर्ग वाक्यांशहरू)</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded border border-purple-200 dark:border-purple-800 mb-6">
+              <h4 className="font-semibold mb-2">🌍 English Rule:</h4>
+              <p className="mb-3">Prepositional phrases are groups of words that begin with a preposition and modify or describe other words in the sentence.</p>
+              
+              <h4 className="font-semibold mb-2">🇳🇵 नेपाली नियम:</h4>
+              <p>पूर्वसर्ग वाक्यांशहरू शब्दहरूका समूह हुन् जुन पूर्वसर्गबाट सुरु हुन्छन् र वाक्यका अन्य शब्दहरूलाई परिमार्जन वा वर्णन गर्छन्।</p>
+            </div>
+
+            {/* Adjective + Preposition */}
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Adjective + Preposition (विशेषण + पूर्वसर्ग)</h3>
+              <div className="bg-secondary/20 p-4 rounded-lg space-y-4">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-3">
+                    <div className="border-l-4 border-primary pl-4">
+                      <p><strong>Good at:</strong> मा राम्रो</p>
+                      <p className="text-sm text-muted-foreground">She is good at playing piano. (उनी पियानो बजाउनमा राम्री छिन्।)</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p><strong>Interested in:</strong> मा रुचि</p>
+                      <p className="text-sm text-muted-foreground">I am interested in learning French. (मलाई फ्रान्सेली सिक्नमा रुचि छ।)</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p><strong>Afraid of:</strong> देखि डराउने</p>
+                      <p className="text-sm text-muted-foreground">He is afraid of spiders. (उसलाई माकुराहरूदेखि डर लाग्छ।)</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p><strong>Proud of:</strong> मा गर्व</p>
+                      <p className="text-sm text-muted-foreground">Parents are proud of their children. (आमाबुबा आफ्ना बच्चाहरूमा गर्व गर्छन्।)</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p><strong>Bad at:</strong> मा खराब</p>
+                      <p className="text-sm text-muted-foreground">I am bad at singing. (म गाउनमा खराब छु।)</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p><strong>Famous for:</strong> को लागि प्रसिद्ध</p>
+                      <p className="text-sm text-muted-foreground">Paris is famous for the Eiffel Tower. (पेरिस एफिल टावरको लागि प्रसिद्ध छ।)</p>
+                    </div>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="border-l-4 border-primary pl-4">
+                      <p><strong>Tired of:</strong> देखि थकान</p>
+                      <p className="text-sm text-muted-foreground">I'm tired of waiting. (म पर्खिएर थाकेको छु।)</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p><strong>Excited about:</strong> बारे उत्साहित</p>
+                      <p className="text-sm text-muted-foreground">She is excited about the trip. (उनी यात्राको बारेमा उत्साहित छिन्।)</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p><strong>Worried about:</strong> बारे चिन्तित</p>
+                      <p className="text-sm text-muted-foreground">He is worried about his exam. (उसले आफ्नो परीक्षाको बारेमा चिन्ता गरिरहेको छ।)</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p><strong>Angry with/at:</strong> सँग रिसाएको</p>
+                      <p className="text-sm text-muted-foreground">She is angry with her brother. (उनी आफ्नो भाइसँग रिसाएकी छिन्।)</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p><strong>Different from:</strong> बाट फरक</p>
+                      <p className="text-sm text-muted-foreground">This book is different from that one. (यो किताब त्यो भन्दा फरक छ।)</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p><strong>Similar to:</strong> सँग मिल्दो</p>
+                      <p className="text-sm text-muted-foreground">Your car is similar to mine. (तिम्रो कार मेरो जस्तै छ।)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Phrasal Verbs */}
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Phrasal Verbs (पूर्वसर्गसहितका क्रियाहरू)</h3>
+              <div className="bg-secondary/20 p-4 rounded-lg space-y-4">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-3">
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Put out:</strong> निभाउनु</p>
+                      <p className="text-sm text-muted-foreground">Please put out the fire. (कृपया आगो निभाउनुहोस्।)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Put off:</strong> स्थगित गर्नु</p>
+                      <p className="text-sm text-muted-foreground">We had to put off the meeting. (हामीले बैठक स्थगित गर्नुपर्यो।)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Look after:</strong> हेरचाह गर्नु</p>
+                      <p className="text-sm text-muted-foreground">She looks after her elderly parents. (उनी आफ्ना वृद्ध आमाबुबाको हेरचाह गर्छिन्।)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Look for:</strong> खोज्नु</p>
+                      <p className="text-sm text-muted-foreground">I'm looking for my keys. (म मेरा चाबीहरू खोजिरहेको छु।)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Give up:</strong> छोड्नु</p>
+                      <p className="text-sm text-muted-foreground">Don't give up on your dreams. (आफ्ना सपनाहरू नछोड्नुहोस्।)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Turn on:</strong> खोल्नु/चालु गर्नु</p>
+                      <p className="text-sm text-muted-foreground">Please turn on the lights. (कृपया बत्ती खोल्नुहोस्।)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Turn off:</strong> बन्द गर्नु</p>
+                      <p className="text-sm text-muted-foreground">Turn off the TV before sleeping. (सुत्नु अगाडि टिभी बन्द गर्नुहोस्।)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Get up:</strong> उठ्नु</p>
+                      <p className="text-sm text-muted-foreground">I get up at 6 AM every day. (म हरेक दिन बिहान ६ बजे उठ्छु।)</p>
+                    </div>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Get on:</strong> चढ्नु</p>
+                      <p className="text-sm text-muted-foreground">Get on the bus at the next stop. (अर्को स्टपमा बसमा चढ्नुहोस्।)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Get off:</strong> ओर्लनु</p>
+                      <p className="text-sm text-muted-foreground">I'll get off at the station. (म स्टेशनमा ओर्लनेछु।)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Come back:</strong> फर्किनु</p>
+                      <p className="text-sm text-muted-foreground">When will you come back? (तिमी कहिले फर्कनेछौ?)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Go out:</strong> बाहिर जानु</p>
+                      <p className="text-sm text-muted-foreground">Let's go out for dinner. (खानाको लागि बाहिर जाऔं।)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Take off:</strong> हटाउनु/उडान गर्नु</p>
+                      <p className="text-sm text-muted-foreground">Take off your shoes before entering. (भित्र पस्नु अगाडि जुत्ता फुकाल्नुहोस्।)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Pick up:</strong> उठाउनु/लिन जानु</p>
+                      <p className="text-sm text-muted-foreground">I'll pick you up at 8 PM. (म तिमीलाई ८ बजे लिन आउनेछु।)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Listen to:</strong> सुन्नु</p>
+                      <p className="text-sm text-muted-foreground">I like to listen to music. (मलाई संगीत सुन्न मन पर्छ।)</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <p><strong>Wait for:</strong> पर्खनु</p>
+                      <p className="text-sm text-muted-foreground">Please wait for me. (कृपया मेरो पर्खनुहोस्।)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Practice Section */}
         <Card>
           <CardHeader>
