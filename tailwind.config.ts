@@ -63,7 +63,21 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				'bright-primary': 'hsl(var(--bright-primary))',
-				'bright-secondary': 'hsl(var(--bright-secondary))'
+				'bright-secondary': 'hsl(var(--bright-secondary))',
+				'vibrant-blue': 'hsl(var(--color-vibrant-blue))',
+				'vibrant-purple': 'hsl(var(--color-vibrant-purple))',
+				'vibrant-green': 'hsl(var(--color-vibrant-green))',
+				'vibrant-orange': 'hsl(var(--color-vibrant-orange))',
+				'vibrant-pink': 'hsl(var(--color-vibrant-pink))',
+				'vibrant-cyan': 'hsl(var(--color-vibrant-cyan))',
+				'vibrant-red': 'hsl(var(--color-vibrant-red))',
+				'vibrant-yellow': 'hsl(var(--color-vibrant-yellow))'
+			},
+			backgroundImage: {
+				'gradient-rainbow': 'var(--gradient-rainbow)',
+				'gradient-sunset': 'var(--gradient-sunset)',
+				'gradient-ocean': 'var(--gradient-ocean)',
+				'gradient-forest': 'var(--gradient-forest)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

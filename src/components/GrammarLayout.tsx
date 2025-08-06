@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
+import Watermark from "./Watermark";
 
 interface GrammarLayoutProps {
   title: string;
@@ -49,6 +50,7 @@ const GrammarLayout = ({ title, description, children }: GrammarLayoutProps) => 
           </CardContent>
         </Card>
       </div>
+      <Watermark />
     </div>
   );
 };

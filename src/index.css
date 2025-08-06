@@ -39,20 +39,29 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Colorful theme tokens */
+    --color-vibrant-blue: 220 100% 50%;
+    --color-vibrant-purple: 280 100% 55%;
+    --color-vibrant-green: 120 100% 35%;
+    --color-vibrant-orange: 25 100% 50%;
+    --color-vibrant-pink: 320 100% 55%;
+    --color-vibrant-cyan: 180 100% 45%;
+    --color-vibrant-red: 0 100% 55%;
+    --color-vibrant-yellow: 50 100% 50%;
+    
+    /* Gradient combinations */
+    --gradient-rainbow: linear-gradient(135deg, hsl(var(--color-vibrant-blue)), hsl(var(--color-vibrant-purple)), hsl(var(--color-vibrant-pink)));
+    --gradient-sunset: linear-gradient(135deg, hsl(var(--color-vibrant-orange)), hsl(var(--color-vibrant-pink)));
+    --gradient-ocean: linear-gradient(135deg, hsl(var(--color-vibrant-blue)), hsl(var(--color-vibrant-cyan)));
+    --gradient-forest: linear-gradient(135deg, hsl(var(--color-vibrant-green)), hsl(var(--color-vibrant-cyan)));
   }
 
   .dark {
@@ -92,9 +101,21 @@ All colors MUST be HSL.
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
     
-    /* Bright colors for animations */
-    --bright-primary: 280 100% 70%;
-    --bright-secondary: 60 100% 50%;
+    /* Colorful theme tokens */
+    --color-vibrant-blue: 220 100% 60%;
+    --color-vibrant-purple: 280 100% 65%;
+    --color-vibrant-green: 120 100% 40%;
+    --color-vibrant-orange: 25 100% 55%;
+    --color-vibrant-pink: 320 100% 65%;
+    --color-vibrant-cyan: 180 100% 50%;
+    --color-vibrant-red: 0 100% 60%;
+    --color-vibrant-yellow: 50 100% 60%;
+    
+    /* Gradient combinations */
+    --gradient-rainbow: linear-gradient(135deg, hsl(var(--color-vibrant-blue)), hsl(var(--color-vibrant-purple)), hsl(var(--color-vibrant-pink)));
+    --gradient-sunset: linear-gradient(135deg, hsl(var(--color-vibrant-orange)), hsl(var(--color-vibrant-pink)));
+    --gradient-ocean: linear-gradient(135deg, hsl(var(--color-vibrant-blue)), hsl(var(--color-vibrant-cyan)));
+    --gradient-forest: linear-gradient(135deg, hsl(var(--color-vibrant-green)), hsl(var(--color-vibrant-cyan)));
   }
 }
 
