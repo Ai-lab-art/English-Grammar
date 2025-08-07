@@ -195,6 +195,250 @@ const Prepositions = () => {
           </CardContent>
         </Card>
 
+        {/* Comparison Table for IN, ON, AT */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl">Differences between IN, ON and AT (IN, ON र AT बीचको भिन्नता)</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded border border-blue-200 dark:border-blue-800 mb-6">
+              <h4 className="font-semibold mb-2">🌍 English Explanation:</h4>
+              <p className="mb-3">Understanding the differences between IN, ON, and AT is crucial for proper English communication. Each has specific uses for time, place, and situations.</p>
+              
+              <h4 className="font-semibold mb-2">🇳🇵 नेपाली व्याख्या:</h4>
+              <p>IN, ON, र AT बीचको भिन्नता बुझ्नु राम्रो अंग्रेजी सञ्चारका लागि अत्यावश्यक छ। यी प्रत्येकको समय, स्थान र परिस्थितिका लागि निश्चित प्रयोगहरू छन्।</p>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-gray-300 dark:border-gray-600">
+                <thead>
+                  <tr className="bg-gray-100 dark:bg-gray-800">
+                    <th className="border border-gray-300 dark:border-gray-600 p-3 text-left font-semibold">
+                      <span className="text-primary">Preposition</span>
+                    </th>
+                    <th className="border border-gray-300 dark:border-gray-600 p-3 text-left font-semibold">
+                      <span className="text-secondary">Use (English)</span>
+                    </th>
+                    <th className="border border-gray-300 dark:border-gray-600 p-3 text-left font-semibold">
+                      <span className="text-accent">Example Sentence</span>
+                    </th>
+                    <th className="border border-gray-300 dark:border-gray-600 p-3 text-left font-semibold">
+                      <span className="text-muted-foreground">Nepali Meaning र व्याख्या</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">in</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">inside something (भित्र)</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">The book is in the bag.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      किताब झोलाको भित्र छ। — केहीको भित्र भएको जनाउँछ।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">on</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">on the surface (माथि, सतहमा)</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">The book is on the table.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      किताब टेबलको माथि छ। — सतहमा भएको जनाउँछ।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">at</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">specific point/location (निश्चित बिन्दु)</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">Meet me at the bus stop.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      मलाई बस स्टपमा भेट्नुहोस्। — निश्चित बिन्दुमा भएको जनाउँछ।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">in</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">time periods (months, years)</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">I was born in 2010.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      म सन् २०१० मा जन्मिएको थिएँ। — महिनामा, वर्षमा प्रयोग हुन्छ।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">on</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">specific days/dates</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">My birthday is on Monday.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      मेरो जन्मदिन सोमबार पर्छ। — तारिख वा दिनसँग प्रयोग हुन्छ।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">at</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">specific times</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">The meeting starts at 3 PM.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      बैठक ३ बजे सुरु हुन्छ। — निश्चित समयमा प्रयोग हुन्छ।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">in</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">places with boundaries</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">She lives in Kathmandu.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      ऊ काठमाडौं मा बस्छे। — सीमाबद्ध ठाउँमा प्रयोग हुन्छ।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">on</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">used for transport or surfaces</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">He is on the bus.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      ऊ बस मा छ। — सतह वा सवारी साधनका लागि प्रयोग हुन्छ।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">at</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">institutions and buildings</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">I study at university.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      म विश्वविद्यालयमा पढ्छु। — संस्था र भवनका लागि प्रयोग हुन्छ।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">in</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">used for enclosed areas (like rooms)</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">I am in the room.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      म कोठा भित्र छु। — बन्द ठाउँमा प्रयोग हुन्छ।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">on</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">used with electronic devices</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">He is on the phone.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      ऊ फोन मा छ। — यन्त्रसँग प्रयोग हुन्छ।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">at</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">corners and ends</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">Turn left at the corner.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      कुनामा बायाँ मोड्नुहोस्। — कुना र अन्त्यमा प्रयोग हुन्छ।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">in</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">vehicles (cars, taxis)</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">She is in the car.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      ऊ गाडीमा छे। — साना सवारी साधनका लागि प्रयोग हुन्छ।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="font-semibold text-primary">on</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-secondary">large vehicles (buses, trains, planes)</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      <span className="text-accent">We traveled on the train.</span>
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-600 p-3">
+                      हामी रेलमा यात्रा गर्यौं। — ठूला सवारी साधनका लागि प्रयोग हुन्छ।
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="mt-6 bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded border border-yellow-200 dark:border-yellow-800">
+              <h4 className="font-semibold mb-2 text-yellow-800 dark:text-yellow-200">💡 Memory Tips (स्मरण युक्तिहरू):</h4>
+              <ul className="space-y-2 text-sm">
+                <li className="text-primary">• <strong>IN:</strong> Think of being "inside" something - भित्र भएको कुरा</li>
+                <li className="text-secondary">• <strong>ON:</strong> Think of something "touching the surface" - सतहमा छुने कुरा</li>
+                <li className="text-accent">• <strong>AT:</strong> Think of a "specific point" - निश्चित बिन्दुको कुरा</li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Prepositions of Place */}
         <Card>
           <CardHeader>
