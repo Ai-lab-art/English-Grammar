@@ -217,13 +217,13 @@ const Prepositions = () => {
                       <span className="text-primary">Preposition</span>
                     </th>
                     <th className="border border-gray-300 dark:border-gray-600 p-3 text-left font-semibold">
-                      <span className="text-secondary">Use (English)</span>
+                      <span className="text-secondary">Use Case</span>
                     </th>
                     <th className="border border-gray-300 dark:border-gray-600 p-3 text-left font-semibold">
                       <span className="text-accent">Example Sentence</span>
                     </th>
                     <th className="border border-gray-300 dark:border-gray-600 p-3 text-left font-semibold">
-                      <span className="text-muted-foreground">Nepali Meaning र व्याख्या</span>
+                      <span className="text-muted-foreground">Nepali Explanation</span>
                     </th>
                   </tr>
                 </thead>
@@ -233,13 +233,13 @@ const Prepositions = () => {
                       <span className="font-semibold text-primary">in</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">inside something (भित्र)</span>
+                      <span className="text-secondary">Inside something enclosed</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
                       <span className="text-accent">The book is in the bag.</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      किताब झोलाको भित्र छ। — केहीको भित्र भएको जनाउँछ।
+                      किताब झोलाको भित्र छ।
                     </td>
                   </tr>
                   <tr>
@@ -247,27 +247,13 @@ const Prepositions = () => {
                       <span className="font-semibold text-primary">on</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">on the surface (माथि, सतहमा)</span>
+                      <span className="text-secondary">On a surface or top of something</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
                       <span className="text-accent">The book is on the table.</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      किताब टेबलको माथि छ। — सतहमा भएको जनाउँछ।
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="font-semibold text-primary">at</span>
-                    </td>
-                    <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">specific point/location (निश्चित बिन्दु)</span>
-                    </td>
-                    <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-accent">Meet me at the bus stop.</span>
-                    </td>
-                    <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      मलाई बस स्टपमा भेट्नुहोस्। — निश्चित बिन्दुमा भएको जनाउँछ।
+                      किताब टेबलको माथि छ।
                     </td>
                   </tr>
                   <tr>
@@ -275,13 +261,13 @@ const Prepositions = () => {
                       <span className="font-semibold text-primary">in</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">time periods (months, years)</span>
+                      <span className="text-secondary">Months, years, centuries</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
                       <span className="text-accent">I was born in 2010.</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      म सन् २०१० मा जन्मिएको थिएँ। — महिनामा, वर्षमा प्रयोग हुन्छ।
+                      म सन् २०१० मा जन्मिएको थिएँ।
                     </td>
                   </tr>
                   <tr>
@@ -289,27 +275,13 @@ const Prepositions = () => {
                       <span className="font-semibold text-primary">on</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">specific days/dates</span>
+                      <span className="text-secondary">Specific days and dates</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
                       <span className="text-accent">My birthday is on Monday.</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      मेरो जन्मदिन सोमबार पर्छ। — तारिख वा दिनसँग प्रयोग हुन्छ।
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="font-semibold text-primary">at</span>
-                    </td>
-                    <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">specific times</span>
-                    </td>
-                    <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-accent">The meeting starts at 3 PM.</span>
-                    </td>
-                    <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      बैठक ३ बजे सुरु हुन्छ। — निश्चित समयमा प्रयोग हुन्छ।
+                      मेरो जन्मदिन सोमबार परेको छ।
                     </td>
                   </tr>
                   <tr>
@@ -317,13 +289,13 @@ const Prepositions = () => {
                       <span className="font-semibold text-primary">in</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">places with boundaries</span>
+                      <span className="text-secondary">Cities, countries, enclosed areas</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
                       <span className="text-accent">She lives in Kathmandu.</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      ऊ काठमाडौं मा बस्छे। — सीमाबद्ध ठाउँमा प्रयोग हुन्छ।
+                      ऊ काठमाडौं मा बस्छे।
                     </td>
                   </tr>
                   <tr>
@@ -331,27 +303,13 @@ const Prepositions = () => {
                       <span className="font-semibold text-primary">on</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">used for transport or surfaces</span>
+                      <span className="text-secondary">Roads, streets, public surfaces</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-accent">He is on the bus.</span>
+                      <span className="text-accent">The shop is on New Road.</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      ऊ बस मा छ। — सतह वा सवारी साधनका लागि प्रयोग हुन्छ।
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="font-semibold text-primary">at</span>
-                    </td>
-                    <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">institutions and buildings</span>
-                    </td>
-                    <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-accent">I study at university.</span>
-                    </td>
-                    <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      म विश्वविद्यालयमा पढ्छु। — संस्था र भवनका लागि प्रयोग हुन्छ।
+                      पसल न्युरोड मा छ।
                     </td>
                   </tr>
                   <tr>
@@ -359,13 +317,13 @@ const Prepositions = () => {
                       <span className="font-semibold text-primary">in</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">used for enclosed areas (like rooms)</span>
+                      <span className="text-secondary">Enclosed vehicles (small/private)</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-accent">I am in the room.</span>
+                      <span className="text-accent">We sat in the car.</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      म कोठा भित्र छु। — बन्द ठाउँमा प्रयोग हुन्छ।
+                      हामी कार मा बस्यौं।
                     </td>
                   </tr>
                   <tr>
@@ -373,27 +331,27 @@ const Prepositions = () => {
                       <span className="font-semibold text-primary">on</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">used with electronic devices</span>
+                      <span className="text-secondary">Large or open vehicles (public/shared)</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-accent">He is on the phone.</span>
+                      <span className="text-accent">She got on the bus/train/plane.</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      ऊ फोन मा छ। — यन्त्रसँग प्रयोग हुन्छ।
+                      ऊ बस/रेलगाडी/विमान मा चढिन्।
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="font-semibold text-primary">at</span>
+                      <span className="font-semibold text-primary">on</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">corners and ends</span>
+                      <span className="text-secondary">Two-wheeled or uncovered transport</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-accent">Turn left at the corner.</span>
+                      <span className="text-accent">He rode on a bicycle/motorbike/horse.</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      कुनामा बायाँ मोड्नुहोस्। — कुना र अन्त्यमा प्रयोग हुन्छ।
+                      ऊ साइकल/मोटरसाइकल/घोडा मा चढेको थियो।
                     </td>
                   </tr>
                   <tr>
@@ -401,13 +359,13 @@ const Prepositions = () => {
                       <span className="font-semibold text-primary">in</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">vehicles (cars, taxis)</span>
+                      <span className="text-secondary">Abstract states/emotions</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-accent">She is in the car.</span>
+                      <span className="text-accent">He is in trouble/love/pain.</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      ऊ गाडीमा छे। — साना सवारी साधनका लागि प्रयोग हुन्छ।
+                      ऊ समस्यामा/मायामा/पिडामा छ।
                     </td>
                   </tr>
                   <tr>
@@ -415,26 +373,141 @@ const Prepositions = () => {
                       <span className="font-semibold text-primary">on</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-secondary">large vehicles (buses, trains, planes)</span>
+                      <span className="text-secondary">Electronic devices/platforms</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      <span className="text-accent">We traveled on the train.</span>
+                      <span className="text-accent">She is on the phone/TV/Internet.</span>
                     </td>
                     <td className="border border-gray-300 dark:border-gray-600 p-3">
-                      हामी रेलमा यात्रा गर्यौं। — ठूला सवारी साधनका लागि प्रयोग हुन्छ।
+                      ऊ फोन/टिभी/इन्टरनेट मा छ।
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-6 bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded border border-yellow-200 dark:border-yellow-800">
-              <h4 className="font-semibold mb-2 text-yellow-800 dark:text-yellow-200">💡 Memory Tips (स्मरण युक्तिहरू):</h4>
-              <ul className="space-y-2 text-sm">
-                <li className="text-primary">• <strong>IN:</strong> Think of being "inside" something - भित्र भएको कुरा</li>
-                <li className="text-secondary">• <strong>ON:</strong> Think of something "touching the surface" - सतहमा छुने कुरा</li>
-                <li className="text-accent">• <strong>AT:</strong> Think of a "specific point" - निश्चित बिन्दुको कुरा</li>
-              </ul>
+            <div className="mt-8">
+              <h4 className="text-xl font-semibold mb-4 text-center">
+                <span className="text-primary">🚌 Vehicles – Which One Takes "in" vs. "on"?</span>
+              </h4>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse border border-gray-300 dark:border-gray-600">
+                  <thead>
+                    <tr className="bg-gray-100 dark:bg-gray-800">
+                      <th className="border border-gray-300 dark:border-gray-600 p-3 text-left font-semibold">
+                        <span className="text-secondary">Vehicle Type</span>
+                      </th>
+                      <th className="border border-gray-300 dark:border-gray-600 p-3 text-left font-semibold">
+                        <span className="text-primary">Preposition</span>
+                      </th>
+                      <th className="border border-gray-300 dark:border-gray-600 p-3 text-left font-semibold">
+                        <span className="text-accent">Example Sentence</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-secondary">Car</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="font-semibold text-primary">in</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-accent">I sat in the car.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-secondary">Taxi</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="font-semibold text-primary">in</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-accent">She got in the taxi.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-secondary">Bus</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="font-semibold text-primary">on</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-accent">He got on the bus.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-secondary">Train</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="font-semibold text-primary">on</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-accent">We got on the train.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-secondary">Airplane</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="font-semibold text-primary">on</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-accent">They are on the plane.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-secondary">Ship / Boat</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="font-semibold text-primary">on</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-accent">I was on the boat.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-secondary">Bicycle</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="font-semibold text-primary">on</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-accent">He rode on a bicycle.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-secondary">Motorcycle</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="font-semibold text-primary">on</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-accent">She sat on the motorbike.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-secondary">Helicopter</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="font-semibold text-primary">in/on</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-600 p-3">
+                        <span className="text-accent">Depends: in if closed, on if riding exterior.</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </CardContent>
         </Card>
