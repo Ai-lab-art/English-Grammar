@@ -158,6 +158,203 @@ const Articles = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Extended uses of "the" with numbered examples */}
+              <div className="space-y-6 mt-8">
+                <h4 className="text-lg font-semibold text-vibrant-orange">Extended uses of "the" ("the" का विस्तारित प्रयोगहरू)</h4>
+
+                {/* Rivers */}
+                <div className="border-l-4 border-vibrant-blue pl-4 p-4 rounded">
+                  <p className="text-vibrant-blue font-semibold">Before names of rivers (नदीहरूको नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-blue"><strong>The</strong> Nile is the longest river in Africa. <span className="text-vibrant-orange">(नील अफ्रिकाको सबैभन्दा लामो नदी हो। — नदीको नाम अघि 'the' प्रयोग हुन्छ।)</span></li>
+                    <li className="text-vibrant-blue"><strong>The</strong> Bagmati flows through Kathmandu. <span className="text-vibrant-orange">(बागमती काठमाडौं हुँदै बग्छ। — नदीको नाम अघि 'the' प्रयोग हुन्छ।)</span></li>
+                    <li className="text-vibrant-blue"><strong>The</strong> Ganges is sacred to millions. <span className="text-vibrant-orange">(गंगा लाखौंका लागि पवित्र छ। — नदीको नाम अघि 'the' प्रयोग हुन्छ।)</span></li>
+                    <li className="text-vibrant-blue"><strong>The</strong> Thames runs through London. <span className="text-vibrant-orange">(थेम्स लन्डन हुँदै बग्छ। — नदीको नाम अघि 'the' प्रयोग हुन्छ।)</span></li>
+                    <li className="text-vibrant-blue"><strong>The</strong> Amazon carries immense water volume. <span className="text-vibrant-orange">(अमेजनले अति धेरै पानी बगाउँछ। — नदीको नाम अघि 'the' प्रयोग हुन्छ।)</span></li>
+                  </ol>
+                </div>
+
+                {/* Newspapers */}
+                <div className="border-l-4 border-vibrant-purple pl-4 p-4 rounded">
+                  <p className="text-vibrant-purple font-semibold">Before names of newspapers (अखबार/समाचारपत्रहरूको नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-purple">I read <strong>The</strong> Kathmandu Post every morning. <span className="text-vibrant-orange">(म हरेक बिहान The Kathmandu Post पढ्छु। — पत्रिकाको नाम अघि 'the' प्रायः हुन्छ।)</span></li>
+                    <li className="text-vibrant-purple">He works for <strong>The</strong> Himalayan Times. <span className="text-vibrant-orange">(उहाँ The Himalayan Times मा काम गर्नुहुन्छ। — पत्रिकाको नाम अघि 'the' प्रायः हुन्छ।)</span></li>
+                    <li className="text-vibrant-purple">She subscribes to <strong>The</strong> New York Times. <span className="text-vibrant-orange">(उनी The New York Times को सदस्यता लिन्छिन्। — पत्रिकाको नाम अघि 'the' प्रायः हुन्छ।)</span></li>
+                    <li className="text-vibrant-purple">We saw it in <strong>The</strong> Guardian. <span className="text-vibrant-orange">(हामीले यो The Guardian मा देख्यौं। — पत्रिकाको नाम अघि 'the' प्रायः हुन्छ।)</span></li>
+                    <li className="text-vibrant-purple">The story appeared in <strong>The</strong> Washington Post. <span className="text-vibrant-orange">(कथा The Washington Post मा प्रकाशित भयो। — पत्रिकाको नाम अघि 'the' प्रायः हुन्छ।)</span></li>
+                  </ol>
+                </div>
+
+                {/* Cardinal numbers (specific group) */}
+                <div className="border-l-4 border-vibrant-green pl-4 p-4 rounded">
+                  <p className="text-vibrant-green font-semibold">Before cardinal numbers when referring to a specific group (निश्चित समूह जनाउँदा अंक अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-green"><strong>The</strong> two students who arrived late apologized. <span className="text-vibrant-orange">(ढिला आएका दुई विद्यार्थीले माफी मागे। — निश्चित दुई जनालाई जनाउँदा 'the'.)</span></li>
+                    <li className="text-vibrant-green"><strong>The</strong> three houses on the hill are new. <span className="text-vibrant-orange">(डाँडाका तीन घर नयाँ छन्। — निश्चित तीन घरको समूह।)</span></li>
+                    <li className="text-vibrant-green"><strong>The</strong> five questions at the end are important. <span className="text-vibrant-orange">(अन्त्यका पाँच प्रश्नहरू महत्वपूर्ण छन्। — विशेष पाँचवटा प्रश्नहरू।)</span></li>
+                    <li className="text-vibrant-green"><strong>The</strong> ten teams qualified for the finals. <span className="text-vibrant-orange">(दसवटा टीम फाइनलका लागि छनोट भए। — निश्चित दसवटा टीमहरू।)</span></li>
+                    <li className="text-vibrant-green"><strong>The</strong> four chapters you skipped are key. <span className="text-vibrant-orange">(तपाईंले छुटाएका चार अध्यायहरू मुख्य छन्। — विशेष चार अध्यायहरू।)</span></li>
+                  </ol>
+                </div>
+
+                {/* Second mention */}
+                <div className="border-l-4 border-vibrant-pink pl-4 p-4 rounded">
+                  <p className="text-vibrant-pink font-semibold">When mentioned the second time (दोस्रो पटक उल्लेख गर्दा)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-pink">I saw a dog. <strong>The</strong> dog was barking loudly. <span className="text-vibrant-orange">(म एक कुकुर देखें। त्यो कुकुर जोरले भुकिरहेको थियो। — दोस्रो उल्लेखमा 'the'.)</span></li>
+                    <li className="text-vibrant-pink">She bought a car. <strong>The</strong> car is very fast. <span className="text-vibrant-orange">(उनीले एक कार किनिन्। त्यो कार निकै छिटो छ। — दोस्रो उल्लेखमा 'the'.)</span></li>
+                    <li className="text-vibrant-pink">We watched a movie. <strong>The</strong> movie was amazing. <span className="text-vibrant-orange">(हामीले एउटा फिल्म हेर्यौं। त्यो फिल्म अद्भुत थियो। — दोस्रो उल्लेखमा 'the'.)</span></li>
+                    <li className="text-vibrant-pink">He met a teacher. <strong>The</strong> teacher helped him. <span className="text-vibrant-orange">(उनी एक शिक्षकसँग भेटे। त्यस शिक्षकले उनलाई मद्दत गरे। — दोस्रो उल्लेखमा 'the'.)</span></li>
+                    <li className="text-vibrant-pink">I found a shop. <strong>The</strong> shop was closed. <span className="text-vibrant-orange">(म एक पसल भेट्टाएँ। त्यो पसल बन्द थियो। — दोस्रो उल्लेखमा 'the'.)</span></li>
+                  </ol>
+                </div>
+
+                {/* Deserts */}
+                <div className="border-l-4 border-vibrant-yellow pl-4 p-4 rounded">
+                  <p className="text-vibrant-yellow font-semibold">Before names of deserts (मरुभूमिको नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-yellow"><strong>The</strong> Sahara is vast and hot. <span className="text-vibrant-orange">(सहारा विशाल र तातो छ। — मरुभूमिको नाम अघि 'the'.)</span></li>
+                    <li className="text-vibrant-yellow"><strong>The</strong> Gobi is in Asia. <span className="text-vibrant-orange">(गोबी एशियामा पर्छ। — मरुभूमिको नाम अघि 'the'.)</span></li>
+                    <li className="text-vibrant-yellow"><strong>The</strong> Thar lies in India and Pakistan. <span className="text-vibrant-orange">(थार भारत र पाकिस्तानमा पर्छ। — मरुभूमिको नाम अघि 'the'.)</span></li>
+                    <li className="text-vibrant-yellow"><strong>The</strong> Kalahari covers parts of Southern Africa. <span className="text-vibrant-orange">(कालाहारी दक्षिणी अफ्रिकाको भागहरूमा फैलिएको छ। — 'the'.)</span></li>
+                    <li className="text-vibrant-yellow"><strong>The</strong> Arabian Desert is dry. <span className="text-vibrant-orange">(अरबी मरुभूमि सुख्खा छ। — मरुभूमिको नाम अघि 'the'.)</span></li>
+                  </ol>
+                </div>
+
+                {/* Poles of the Earth */}
+                <div className="border-l-4 border-vibrant-cyan pl-4 p-4 rounded">
+                  <p className="text-vibrant-cyan font-semibold">Before the poles of the Earth (धरतीका ध्रुवहरूको नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-cyan"><strong>The</strong> North Pole is extremely cold. <span className="text-vibrant-orange">(उत्तरी ध्रुव अत्यन्त चिसो छ। — ध्रुव नाम अघि 'the'.)</span></li>
+                    <li className="text-vibrant-cyan"><strong>The</strong> South Pole has harsh weather. <span className="text-vibrant-orange">(दक्षिणी ध्रुवमा कडा मौसम हुन्छ। — 'the'.)</span></li>
+                    <li className="text-vibrant-cyan">Explorers reached <strong>the</strong> North Pole in 1909. <span className="text-vibrant-orange">(अन्वेषकहरू 1909 मा उत्तरी ध्रुव पुगे। — 'the'.)</span></li>
+                    <li className="text-vibrant-cyan">Scientists study <strong>the</strong> South Pole year-round. <span className="text-vibrant-orange">(विज्ञहरूले वर्षभरि दक्षिणी ध्रुवको अध्ययन गर्छन्। — 'the'.)</span></li>
+                    <li className="text-vibrant-cyan">Few people have visited <strong>the</strong> North Pole. <span className="text-vibrant-orange">(धेरै कम मानिस उत्तरी ध्रुव पुगेका छन्। — 'the'.)</span></li>
+                  </ol>
+                </div>
+
+                {/* Seas and Oceans */}
+                <div className="border-l-4 border-vibrant-blue pl-4 p-4 rounded">
+                  <p className="text-vibrant-blue font-semibold">Before names of seas and oceans (सागर र महासागरको नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-blue"><strong>The</strong> Pacific Ocean is very deep. <span className="text-vibrant-orange">(प्रशान्त महासागर धेरै गहिरो छ। — महासागरको नाम अघि 'the'.)</span></li>
+                    <li className="text-vibrant-blue"><strong>The</strong> Atlantic Ocean separates continents. <span className="text-vibrant-orange">(एटलान्टिक महासागरले महादेशहरू छुट्याउँछ। — 'the'.)</span></li>
+                    <li className="text-vibrant-blue"><strong>The</strong> Indian Ocean borders South Asia. <span className="text-vibrant-orange">(भारतीय महासागर दक्षिण एशियासँग जोडिन्छ। — 'the'.)</span></li>
+                    <li className="text-vibrant-blue"><strong>The</strong> Mediterranean Sea is beautiful. <span className="text-vibrant-orange">(भूमध्य सागर सुन्दर छ। — सागर/समुद्र अगाडि 'the'.)</span></li>
+                    <li className="text-vibrant-blue"><strong>The</strong> Arabian Sea touches Nepal’s neighbors. <span className="text-vibrant-orange">(अरबी सागर नेपालका छिमेकी देशहरूलाई छोन्छ। — 'the'.)</span></li>
+                  </ol>
+                </div>
+
+                {/* Mountain ranges */}
+                <div className="border-l-4 border-vibrant-green pl-4 p-4 rounded">
+                  <p className="text-vibrant-green font-semibold">Before names of mountain ranges (पहाड/हिमाल शृङ्खलाको नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-green"><strong>The</strong> Himalayas are the highest mountains. <span className="text-vibrant-orange">(हिमालय विश्वकै अग्लो पर्वतशृङ्खला हो। — शृङ्खला नाम अघि 'the'.)</span></li>
+                    <li className="text-vibrant-green"><strong>The</strong> Andes run along South America. <span className="text-vibrant-orange">(एन्डिज दक्षिण अमेरिकासँग समांतर चल्छ। — 'the'.)</span></li>
+                    <li className="text-vibrant-green"><strong>The</strong> Alps are in Europe. <span className="text-vibrant-orange">(एल्प्स युरोपमा छन्। — 'the'.)</span></li>
+                    <li className="text-vibrant-green"><strong>The</strong> Rockies stretch through North America. <span className="text-vibrant-orange">(रकीज उत्तर अमेरिकाभरि फैलिएका छन्। — 'the'.)</span></li>
+                    <li className="text-vibrant-green"><strong>The</strong> Pyrenees divide Spain and France. <span className="text-vibrant-orange">(पिरिनिज स्पेन र फ्रान्स छुट्याउँछ। — 'the'.)</span></li>
+                  </ol>
+                </div>
+
+                {/* Groups of islands */}
+                <div className="border-l-4 border-vibrant-pink pl-4 p-4 rounded">
+                  <p className="text-vibrant-pink font-semibold">Before names of groups of islands (टापु समूहहरूको नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-pink"><strong>The</strong> Maldives are in the Indian Ocean. <span className="text-vibrant-orange">(माल्दिभ्स भारतीय महासागरमा छन्। — समूह नाम अघि 'the'.)</span></li>
+                    <li className="text-vibrant-pink"><strong>The</strong> Philippines have thousands of islands. <span className="text-vibrant-orange">(फिलिपिन्समा हजारौं टापु छन्। — 'the'.)</span></li>
+                    <li className="text-vibrant-pink"><strong>The</strong> Bahamas attract tourists. <span className="text-vibrant-orange">(बहामास पर्यटकहरूलाई आकर्षित गर्छ। — 'the'.)</span></li>
+                    <li className="text-vibrant-pink"><strong>The</strong> Andaman and Nicobar Islands are scenic. <span className="text-vibrant-orange">(एन्डामान र निकोबार टापुहरू सुन्दर छन्। — 'the'.)</span></li>
+                    <li className="text-vibrant-pink"><strong>The</strong> Canary Islands belong to Spain. <span className="text-vibrant-orange">(क्यानरी टापुहरू स्पेनका हुन्। — 'the'.)</span></li>
+                  </ol>
+                </div>
+
+                {/* Geographical areas */}
+                <div className="border-l-4 border-vibrant-yellow pl-4 p-4 rounded">
+                  <p className="text-vibrant-yellow font-semibold">Before names of geographical areas (भौगोलिक क्षेत्रहरूको नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-yellow"><strong>The</strong> Middle East is rich in history. <span className="text-vibrant-orange">(मध्यपूर्व इतिहासमा समृद्ध छ। — क्षेत्रको नाम अघि 'the'.)</span></li>
+                    <li className="text-vibrant-yellow"><strong>The</strong> Far East includes many countries. <span className="text-vibrant-orange">(दुरपूर्वमा धेरै देशहरू पर्छन्। — 'the'.)</span></li>
+                    <li className="text-vibrant-yellow"><strong>The</strong> West influences global culture. <span className="text-vibrant-orange">(पश्चिमले विश्व संस्कृतिमाथि प्रभाव पार्छ। — 'the'.)</span></li>
+                    <li className="text-vibrant-yellow"><strong>The</strong> Arctic is melting rapidly. <span className="text-vibrant-orange">(आर्क्टिक छिट्टै पग्लिँदैछ। — 'the'.)</span></li>
+                    <li className="text-vibrant-yellow"><strong>The</strong> Balkans have diverse traditions. <span className="text-vibrant-orange">(बाल्कनमा विविध परम्पराहरू छन्। — 'the'.)</span></li>
+                  </ol>
+                </div>
+
+                {/* Musical instruments */}
+                <div className="border-l-4 border-vibrant-cyan pl-4 p-4 rounded">
+                  <p className="text-vibrant-cyan font-semibold">Before names of musical instruments (वाद्यवादनाको नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-cyan">She plays <strong>the</strong> guitar. <span className="text-vibrant-orange">(उनी गिटार बजाउँछिन्। — सामान्य रूपमा बजाउने वादनमा 'the'.)</span></li>
+                    <li className="text-vibrant-cyan">He plays <strong>the</strong> piano. <span className="text-vibrant-orange">(उनी पियानो बजाउँछन्। — 'the'.)</span></li>
+                    <li className="text-vibrant-cyan">They play <strong>the</strong> violin together. <span className="text-vibrant-orange">(उनीहरू सँगै भायोलिन बजाउँछन्। — 'the'.)</span></li>
+                    <li className="text-vibrant-cyan">She is learning <strong>the</strong> flute. <span className="text-vibrant-orange">(उनी बाँसुरी सिक्दैछिन्। — 'the'.)</span></li>
+                    <li className="text-vibrant-cyan">He mastered <strong>the</strong> drums. <span className="text-vibrant-orange">(उनी ड्रम्समा निपूर्ण भएका छन्। — 'the'.)</span></li>
+                  </ol>
+                </div>
+
+                {/* Scientific inventions */}
+                <div className="border-l-4 border-vibrant-blue pl-4 p-4 rounded">
+                  <p className="text-vibrant-blue font-semibold">Before names of scientific inventions (वैज्ञानिक आविष्कारहरूको नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-blue"><strong>The</strong> telephone changed communication. <span className="text-vibrant-orange">(टेलिफोनले सञ्चार परिवर्तन गर्‍यो। — आविष्कार जनाउँदा 'the'.)</span></li>
+                    <li className="text-vibrant-blue"><strong>The</strong> steam engine powered industry. <span className="text-vibrant-orange">(स्टीम इन्जिनले उद्योगलाई शक्ति दियो। — 'the'.)</span></li>
+                    <li className="text-vibrant-blue"><strong>The</strong> computer revolutionized work. <span className="text-vibrant-orange">(कम्प्युटरले काममा क्रान्ति ल्यायो। — 'the'.)</span></li>
+                    <li className="text-vibrant-blue"><strong>The</strong> printing press spread knowledge. <span className="text-vibrant-orange">(मुद्रणयन्त्रले ज्ञान विस्तार गर्‍यो। — 'the'.)</span></li>
+                    <li className="text-vibrant-blue"><strong>The</strong> microscope opened a new world. <span className="text-vibrant-orange">(सूक्ष्मदर्शीले नयाँ संसार देखायो। — 'the'.)</span></li>
+                  </ol>
+                </div>
+
+                {/* Famous buildings */}
+                <div className="border-l-4 border-vibrant-green pl-4 p-4 rounded">
+                  <p className="text-vibrant-green font-semibold">Before names of famous buildings/monuments (प्रसिद्ध भवन/स्मारकहरूको नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-green">We visited <strong>the</strong> Eiffel Tower. <span className="text-vibrant-orange">(हामी एफिल टावर गयौं। — प्रसिद्ध भवन अघि 'the'.)</span></li>
+                    <li className="text-vibrant-green">He saw <strong>the</strong> Taj Mahal at sunrise. <span className="text-vibrant-orange">(उनीले बिहानीमा ताजमहल देखे। — 'the'.)</span></li>
+                    <li className="text-vibrant-green">They walked along <strong>the</strong> Great Wall of China. <span className="text-vibrant-orange">(उनीहरू चिनियाँ महान् पर्खालसँगै हिँडे। — 'the'.)</span></li>
+                    <li className="text-vibrant-green">We toured <strong>the</strong> Colosseum in Rome. <span className="text-vibrant-orange">(हामी रोमन कोलोशियम भ्रमण गर्यौं। — 'the'.)</span></li>
+                    <li className="text-vibrant-green">She visited <strong>the</strong> Statue of Liberty. <span className="text-vibrant-orange">(उनीले स्वतन्त्रताको मूर्ति अवलोकन गरिन्। — 'the'.)</span></li>
+                  </ol>
+                </div>
+
+                {/* Historical events */}
+                <div className="border-l-4 border-vibrant-pink pl-4 p-4 rounded">
+                  <p className="text-vibrant-pink font-semibold">Before names of historical events (ऐतिहासिक घटनाहरूको नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-pink"><strong>The</strong> Industrial Revolution transformed society. <span className="text-vibrant-orange">(औद्योगिक क्रान्तिले समाज परिवर्तन गर्‍यो। — ऐतिहासिक घटना अघि 'the'.)</span></li>
+                    <li className="text-vibrant-pink"><strong>The</strong> French Revolution began in 1789. <span className="text-vibrant-orange">(फ्रान्सेली क्रान्ति १७८९ मा सुरु भयो। — 'the'.)</span></li>
+                    <li className="text-vibrant-pink"><strong>The</strong> Renaissance reshaped art and science. <span className="text-vibrant-orange">(पुनर्जागरणले कला र विज्ञानलाई रूपान्तरण गर्‍यो। — 'the'.)</span></li>
+                    <li className="text-vibrant-pink"><strong>The</strong> Cold War lasted decades. <span className="text-vibrant-orange">(शीतयुद्ध दशकौंसम्म चल्यो। — 'the'.)</span></li>
+                    <li className="text-vibrant-pink"><strong>The</strong> First World War ended in 1918. <span className="text-vibrant-orange">(पहिलो विश्वयुद्ध १९१८ मा अन्त्य भयो। — 'the'.)</span></li>
+                  </ol>
+                </div>
+
+                {/* Ships and trains */}
+                <div className="border-l-4 border-vibrant-yellow pl-4 p-4 rounded">
+                  <p className="text-vibrant-yellow font-semibold">Before names of ships and trains (जहाज र रेलका नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-yellow"><strong>The</strong> Titanic sank in 1912. <span className="text-vibrant-orange">(टाइटानिक १९१२ मा डुब्यो। — जहाजको नाम अघि 'the'.)</span></li>
+                    <li className="text-vibrant-yellow"><strong>The</strong> Mayflower carried settlers to America. <span className="text-vibrant-orange">(मेफ्लावरले बसोबासकर्तालाई अमेरिका पुर्‍यायो। — 'the'.)</span></li>
+                    <li className="text-vibrant-yellow">We boarded <strong>the</strong> Orient Express. <span className="text-vibrant-orange">(हामी ओरिएन्ट एक्सप्रेसमा चढ़्यौं। — रेल/सेवाको नाम अघि 'the'.)</span></li>
+                    <li className="text-vibrant-yellow">He admired <strong>the</strong> Queen Mary 2. <span className="text-vibrant-orange">(उनी क्विन म्यारी 2 लाई प्रशंसा गर्थे। — जहाजको नाम अघि 'the'.)</span></li>
+                    <li className="text-vibrant-yellow">They took <strong>the</strong> Trans-Siberian Express. <span className="text-vibrant-orange">(उनीहरूले ट्रान्स-साइबेरियन एक्सप्रेस लिए। — 'the'.)</span></li>
+                  </ol>
+                </div>
+
+                {/* Families */}
+                <div className="border-l-4 border-vibrant-cyan pl-4 p-4 rounded">
+                  <p className="text-vibrant-cyan font-semibold">Before names of families (परिवारको थर/समूहको नाम अघि)</p>
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li className="text-vibrant-cyan"><strong>The</strong> Smiths moved next door. <span className="text-vibrant-orange">(स्मिथ परिवार छेउमा सरे। — परिवार/थर बहुवचनमा 'the'.)</span></li>
+                    <li className="text-vibrant-cyan"><strong>The</strong> Thapas are visiting today. <span className="text-vibrant-orange">(थापा परिवार आज आउँदैछन्। — 'the'.)</span></li>
+                    <li className="text-vibrant-cyan"><strong>The</strong> Koiralas hosted the event. <span className="text-vibrant-orange">(कोइराला परिवारले कार्यक्रम आयोजना गर्‍यो। — 'the'.)</span></li>
+                    <li className="text-vibrant-cyan"><strong>The</strong> Johnsons live nearby. <span className="text-vibrant-orange">(जोन्सन परिवार नजिकै बस्छ। — 'the'.)</span></li>
+                    <li className="text-vibrant-cyan"><strong>The</strong> Sharmas invited us to dinner. <span className="text-vibrant-orange">(शर्मा परिवारले हामीलाई दिउँसोको भोजनमा बोलाए। — 'the'.)</span></li>
+                  </ol>
+                </div>
+              </div>
             </div>
           </CardContent>
         </Card>
